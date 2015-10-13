@@ -1,0 +1,100 @@
+<div class="page-title">
+	<h1>Личный кабинет</h1>
+</div>
+<div class="lk-window">
+	<div class="lk-window-header">
+		<span>Запрос на вывод средств</span>
+	</div>
+	<div class="lk-window-body">
+		<section class="lk-window-section">
+			<h3>Данные для вывода</h3>
+			<hr />
+			<section class="success-block" data-id="5">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+  				<strong>Успешно!</strong> <span>Запрос на вывод средств прошел успешно.</span>
+			</section>
+			<section class="error-block" data-id="5">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+  				<strong>Ошибка!</strong> <span>Ошибка!</span>
+			</section>
+			<div class="description description-out">
+				<span>*Все поля обязательны для заполнения</span>
+				<i>Внимание!<br />Процесс вывода средств может занять до 3х рабочих дней. В случае если средства не снялись в течение указанного  времени, обратитесь в тех. поддержку <a href="mailtio:orkadmin@mail.ru">orkadmin@mail.ru</a></i>
+			</div>
+			<table class="for-forms for-forms-out clearfix">
+				<tr>
+					<td>Номер кошелька</td>
+					<td style="width:8%"></td>
+					<td>Сумма</td>
+				</tr>
+				<tr>
+					<td>
+						<select name="" id="user-wallets"></select>
+					</td>
+					<td></td>
+					<td><input id="sum_real" type="text"></td>
+				</tr>
+				<tr>
+					<td colspan="3">Комментарий</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3"><textarea name="" id="wallet_message" cols="30" rows="10"></textarea></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button id="wallets" class="btn" data-id="5">
+							<div class="btn-left">
+								<img class="btn-bg" src="../images/button-left.png" alt="">
+								<img src="../images/hammer.png" alt="" class="btn-icon">
+							</div>
+							<span>Отправить</span>
+							<img class="btn-preloader-img" src="../images/loader.gif" alt="">
+							<div class="btn-right">
+								<img class="btn-bg" src="../images/button-right.png" alt="">
+							</div>
+						</button>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			
+			<h3>Фильтр</h3>
+			<div class="different-tables">
+				<span class="active" data-table="transaction-table">Транзакции</span> | <span data-table="wallets-table">Запросы на вывод средств</span>
+			</div>
+			<div class="description">
+				<p>В данной таблице вы можете посмотреть<br/>последние операции, которые происходили<br />с Вашим аккаунтом</p>
+			</div>
+			<table id="transaction-table" class="data-table data-table-tickets">
+				<thead>
+					<tr>
+						<th>Тип транзакции</th>
+						<th>Сумма</th>
+						<th>Метод</th>
+						<th>Дата</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			<table id="wallets-table" class="data-table data-table-tickets">
+				<thead>
+					<tr>
+						<th>Сумма</th>
+						<th>Кошелек</th>
+						<th>Статус</th>
+						<th>Дата</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</section>
+	</div>
+</div>
+<script src="../js/out.js"></script>

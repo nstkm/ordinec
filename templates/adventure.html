@@ -1,0 +1,78 @@
+<div class="lk-window">
+	<div class="lk-window-header lk-window-header-add">
+		<span>График выхода рекламы</span>
+	</div>
+	<div class="lk-window-body">
+		<section class="lk-window-section">
+			<section class="success-block" data-id="1">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+					<strong>Успешно!</strong> <span>Реклама успешно добавлена.</span>
+			</section>
+			<section class="error-block" data-id="1">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+					<strong>Ошибка!</strong> <span>Ошибка!</span>
+			</section>
+			<table class="table-step-3-second">
+				<thead>
+					<tr style="background:#f1f1f1;">
+						<td>Название поста</td>
+						<td>Время(часы:мин)</td>
+						<td>Размещать на срок</td>
+						<td>Примечание</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><input name="post-name" type="text"></td>
+						<td><input name="post-time-hours" type="text" value="00"> : <input name="post-time-minits" type="text" value="00"></td>
+						<td>
+							<select name="post-continue">
+								<option value="null">Всегда</option>
+								<option value="1">1 час</option>
+								<option value="2">2 часа</option>
+								<option value="3">3 часа</option>
+								<option value="4">4 часа</option>
+								<option value="5">5 часов</option>
+								<option value="6">6 часов</option>
+								<option value="7">7 часов</option>
+								<option value="8">8 часов</option>
+								<option value="9">9 часов</option>
+								<option value="10">10 часов</option>
+								<option value="11">11 часов</option>
+								<option value="12">12 часов</option>
+								<option value="13">13 часов</option>
+								<option value="14">14 часов</option>
+								<option value="15">15 часов</option>
+								<option value="16">16 часов</option>
+								<option value="17">17 часов</option>
+								<option value="18">18 часов</option>
+								<option value="19">19 часов</option>
+								<option value="20">20 часов</option>
+								<option value="21">21 час</option>
+								<option value="22">22 часа</option>
+								<option value="23">23 часа</option>
+								<option value="24">24 часа</option>
+							</select>
+						</td>
+						<td><input name="post-note" type="text"></td>
+						<td>
+							<button class="btn post-save-new-pole" data-id="1">
+								<div class="btn-left">
+									<img class="btn-bg" src="../images/button-left.png" alt="">
+									<img src="../images/btn-arrow.png" alt="" class="btn-icon">
+								</div>
+								<span>Сохранить</span>
+								<img class="btn-preloader-img" src="../images/loader.gif" alt="" style="display: none;">
+								<div class="btn-right">
+									<img class="btn-bg" src="../images/button-right.png" alt="">
+								</div>
+							</button>
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</section>
+	</div>
+</div>
+<script src="js/adventure.js"></script>

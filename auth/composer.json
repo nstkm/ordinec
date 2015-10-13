@@ -1,0 +1,14 @@
+{
+    "name": "shcherbanich/auth",
+    "authors": [
+        {
+            "name": "Philip",
+            "email": "filippf@bk.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "symfony/class-loader": "^2.7",
+        "guzzlehttp/guzzle": "^6.1@dev"
+    }
+}

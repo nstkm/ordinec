@@ -1,0 +1,64 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: left;
+}
+
+table td {
+	vertical-align: middle!important;
+}
+
+.new-user td,
+#offers-table td,
+#groups-table td,
+#post-table td {
+	padding: 0 10px;
+}
+
+.new-user {
+	margin-bottom: 15px;
+}
+
+.alert {
+	display: none;
+}
+
+table img {
+	width: 100px;
+	margin: 5px 0;
+}
+
+#wrap-logo {
+	float: left;
+	position: relative;
+}
+
+#wrap-logo>span {
+	color: red;
+    position: absolute;
+    top: -8px;
+    right: -7px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.starter-template>button {
+  margin-right: 11px;
+}
+
+#uploader {
+  display:none;
+}
+
+.upload-info img {
+  height: 100px;
+  margin: 10px 10px;
+}
+
+table:not(.table) {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Пользователи</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Пользователи</a></li>
+            <li><a href="offers.html">Офферы</a></li>
+            <li><a href="posts.html">Посты</a></li>
+            <li class="active"><a href="schedules.html">Расписание</a></li>
+            <li><a href="groups.html">Группы</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="starter-template">
+        <h4>Расписания</h4>
+        <section class="alert success-block alert-success" data-id="1">
+          <strong>Успешно!</strong> <span>Поста обновлен</span>
+        </section>
+        <section class="alert error-block alert-warning" data-id="1">
+          <strong>Ошибка</strong> <span></span>
+        </section>
+        <table style="text-align:right;" class="table-striped" id="schedules-Name">
+          <thead>
+            <th>Название</th>
+          </thead>
+          <tbody>
+            <td><input name="name" id="name" type="text" class="form-control" value=""></td>
+          </tbody>
+        </table>
+        <table id="schedules-table" class="table table-striped">
+          <thead>
+            <tr>
+              <th>Начало</th>
+              <th>Конец</th>
+              <th>Время постинга</th>
+              <th>Оффер</th>
+              <th>ID Поста</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <button style="float:right" id="add" type="button" class="btn btn-default btn-sm">Добавить</button>
+        <br>
+        <br>
+        <br>
+        <button  data-id="1" id="add-schedules" type="button" style="float:right;" class="btn btn-default btn-sm">Сохранить</button>
+      </div>
+      
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/global.js" ></script>
+    <script src="js/editSchedules.js"></script>
+  </body>
+</html>

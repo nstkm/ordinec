@@ -1,0 +1,207 @@
+<div class="page-title">
+	<h1>Статистика:</h1>
+</div>
+<div class="lk-window lk-window-soob">
+	<div id="statistic-filters" class="lk-window-header">
+		<div class="statistic-search-left">
+			<select name="group" id="group">
+				<option value="date">По дате</option>
+				<option value="id_offer">По офферам</option>
+				<option value="id_group">По группам</option>
+				<option value="id_country">По старанам</option>
+				<option value="id_post">По постам</option>
+				<option value="id_poster">По аккаунту</option>
+				<option value="device">По устройствам</option>
+			</select>
+			<input type="text" name="q[date][between]" id="data-range" value="20.05.2015-21.05.2015">
+		</div>
+		<div class="statistic-search-right">
+			<select id="social-networks" name="q[id_social_network][equal]">
+				<option value="">Соц. сеть</option>
+			</select>
+			<select id="groups" name="q[id_group][equal]">
+				<option value="">Группа</option>
+			</select>
+			<select id="offers" name="q[id_offer][equal]">
+				<option value="">Оффер</option>
+			</select>
+			<select id="traffics" name="q[device][equal]">
+				<option value="">Весь трафик</option>
+			</select>
+			<button id="filter">Ок</button>
+		</div>
+	</div>
+	<div class="lk-window-body">
+		<section class="lk-window-section lk-window-section-statistic">
+			<!--
+			https://78.155.208.199:405/v1/statistics?group=id_poter
+			<span>
+				Выбрать сообщества
+				<select name="" id="">
+					<option value="">балбалабла</option>
+				</select>
+			</span>
+			<span>График доходов</span>
+			<i>Май 2015</i>
+			<div class="soob-dots">
+				<div class="soob-dots-bg statistic-dots-bg">
+					<table>
+						<tr>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>1</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>2</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>3</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>4</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>5</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>6</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>7</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>8</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>9</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>10</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>11</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>12</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>13</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>14</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>15</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>16</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>17</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>18</span>
+							</td>
+							<td>
+								<div class="wrap-dots wrap-dot-event">
+									<table>
+										<tr>
+											<td><div class="wrap-dots"></div></td>
+										</tr>
+									</table>
+								</div>
+								<span>19</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>20</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>21</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>22</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>23</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>24</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>25</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>26</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>27</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>28</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>29</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>30</span>
+							</td>
+							<td>
+								<div class="wrap-dots"></div>
+								<span>31</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>-->
+			<div class="for-statistic-table">
+				<table>
+					<thead>
+						<tr style="background:#f1f1f1;">
+							<td>Дата</td>
+							<td>Хиты</td>
+							<td>Клики</td>
+							<td>Принято (шт./руб.)</td>
+							<td>Ожидаемо (шт./руб.)</td>
+							<td>Отклонено (шт./руб.)</td>
+							<td>Всего лидов (шт./руб.)</td>
+							<td>CR</td>
+							<td>EPC</td>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</div>
+</div>
+<script src="../js/statistic.js"></script>

@@ -1,0 +1,103 @@
+<div class="page-title">
+	<h1>Личный кабинет</h1>
+</div>
+<div class="lk-window">
+	<div class="lk-window-header">
+		<span>Персональные данные</span>
+	</div>
+	<div class="lk-window-body">
+		<section class="lk-window-section">
+			<h3>Смена пароля</h3>
+			<hr />
+			<section class="success-block" data-id="1">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+  				<strong>Успешно!</strong> <span>Данные успешно изменены.</span>
+			</section>
+			<section class="error-block" data-id="1">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+  				<strong>Ошибка!</strong> <span>Ошибка!</span>
+			</section>
+			<table class="for-forms for-forms-lk-main">
+				<tr>
+					<td>Старый пароль</td>
+					<td>Новый пароль</td>
+					<td>Повторите новый</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input name="old_passwd" type="text"></td>
+					<td><input name="new_passwd" type="text"></td>
+					<td><input name="repeat_passwd" type="text"></td>
+					<td>
+						<button id="change_password" class="btn" data-id="1">
+							<div class="btn-left">
+								<img class="btn-bg" src="../images/button-left.png" alt="">
+								<img src="../images/hammer.png" alt="" class="btn-icon">
+							</div>
+							<span>Изменить</span>
+							<img class="btn-preloader-img" src="../images/loader.gif" alt="">
+							<div class="btn-right">
+								<img class="btn-bg" src="../images/button-right.png" alt="">
+							</div>
+						</button>
+					</td>
+				</tr>
+			</table>
+			<h3>Контактные данные</h3>
+			<hr />
+			<section class="success-block" data-id="2">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+  				<strong>Успешно!</strong> <span>Данные успешно изменены.</span>
+			</section>
+			<section class="error-block" data-id="2">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+  				<strong>Ошибка!</strong> <span>Ошибка</span>
+			</section>
+			<table class="for-forms for-forms-lk-main">
+				<tr>
+					<td>Моб.</td>
+					<td>Skype</td>
+					<td>ICQ</td>
+				</tr>
+				<tr>
+					<td><input name="phone" type="text"></td>
+					<td><input name="skype" type="text"></td>
+					<td><input name="icq" type="text"></td>
+				</tr>
+				<tr>
+					<td>Моб. (дополнительный)</td>
+				</tr>
+				<tr>
+					<td><input type="text"></td>
+				</tr>
+			</table>
+			<h3>Финансы</h3>
+			<hr />
+			<p>Для того чтобы сменить или добавить кошелек, обратитесь в службу поддержки <a href="mailto:orkadmin@mail.ru">orkadmin@mail.ru</a></p>
+			<table class="data-table data-table-lk-main">
+				<thead>
+					<tr>
+						<th>Система</th>
+						<th>Номер счета</th>
+						<th>Примечание</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+			<button id="user-data" class="btn" data-id="2">
+				<div class="btn-left">
+					<img class="btn-bg" src="../images/button-left.png" alt="">
+					<img src="../images/hammer.png" alt="" class="btn-icon">
+				</div>
+				<span>Сохранить&nbsp;изменения</span>
+				<img class="btn-preloader-img" src="../images/loader.gif" alt="">
+				<div class="btn-right">
+					<img class="btn-bg" src="../images/button-right.png" alt="">
+				</div>
+			</button>
+		</section>
+	</div>
+</div>
+<script src="../js/lk.js"></script>

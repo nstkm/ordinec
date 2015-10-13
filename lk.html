@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<aside class="left-aside">
+			<div class="nav-wrap">
+				<a href="">
+					<img src="images/lk-orc.png" alt="">
+					ордынец.ру
+				</a>
+				<nav class="nav">
+					<ul>
+						<li><a href="soobshestva.html"><div><img src="images/icon-star.png" alt=""></div>Сообщества</a></li>
+						<li><a href="statistic.html"><div><img src="images/icon-statistic.png" alt=""></div>Статистика</a></li>
+						<li class="level-0">
+							<a><div><img src="images/icon-mail.png" alt=""></div>Настройки</a>
+							<ul>
+								<li><a href="options.html">Личный кабинет</a></li>
+								<li><a href="out.html">Вывод средств</a></li>
+								<li><a href="ticket.html">Тикеты</a></li>
+							</ul>
+						</li>
+						<li><a href="" id="exit"><div></div>Выход</a></li>
+					</ul>
+				</nav>
+			</div>
+			<table>
+				<tr>
+					<td>Доступно</td>
+					<td class="td-right"><span id="balance"></span> Р</td>
+				</tr>
+				<tr>
+					<td>Холд</td>
+					<td class="td-right"><span id="hold"></span> Р</td>
+				</tr>
+				<tr>
+					<td>Ожидается</td>
+					<td class="td-right"><span id="expect"></span> Р</td>
+				</tr>
+			</table>
+			<div class="lk-achivment">
+				<img src="images/lk-orc.png" alt="">
+				<p>В ваших владениях уже <span class="blue"><span class="static-count-platforms"></span> поселений</span> общей численностью <span class="yellow"><span class="static-count-followers"></span> человек</span></p>
+			</div>
+		</aside>
+		<aside class="right-side">
+			<div class="top-line"></div>
+			<div class="global-information">
+				<table>
+					<tr>
+						<td><h2>Ваши площадки:  <img src="images/vk-icon.png" alt=""> - <span id="count-vk"></span>; <img src="images/ok-icon.png" alt=""> - <span id="count-ok"></span>; <img src="images/mm-icon.png" alt=""> - <span id="count-mm"></span>;</h2></td>
+						<td><span class="middle">Всего площадок: <span id="count-all-platforms"></span></span></td>
+						<td style="text-align:right;padding-right:20px;"><span class="right">Всего аудитории: <span  id="count-all-followers"></span> человека</span></td>
+					</tr>
+				</table>
+			</div>
+			<div id="page-preloader">
+				<img src="images/page-preloader.gif" alt="">
+			</div>
+			<div class="dynamic-content"></div>
+			<div class="lk-bg">
+				<img src="images/lk-bg.png" alt="">
+				<div class="fb-icon"></div>
+				<div class="vk-icon"></div>
+				<div class="ok-icon"></div>
+			</div>
+		</aside>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/history.js"></script>
+	<script src="js/pagination/jquery.twbsPagination.min.js"></script>
+	
+	<script type="text/javascript" src="../js/datapicker/moment.min.js"></script>
+	<script type="text/javascript" src="../js/datapicker/daterangepicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/datapicker/daterangepicker.css" />
+	<link rel="stylesheet" type="text/css" href="../js/datapicker/font-awesome.min.css" />
+
+	<script src="js/global.js"></script>
+	<!--<script src="js/lk.js"></script>-->
+</body>
+</html>

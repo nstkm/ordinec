@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Группы</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Пользователи</a></li>
+            <li><a href="offers.html">Офферы</a></li>
+            <li><a href="posts.html">Посты</a></li>
+            <li><a href="schedules.html">Расписание</a></li>
+            <li class="active"><a href="groups.html">Группы</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h4>Группы</h4>
+        <table id="groups-table" class="table table-striped">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>Социальная сеть</th>
+              <th>Пользователь</th>
+              <th>Название</th>
+              <th>id паблика</th>
+              <th>Статус</th>
+              <th style="width: 200px;"></th>
+            </tr>
+            <tr id="filter">
+              <th><input style="width:50px;" name="[id][equal]" type="text" class="form-control"></th>
+              <th>
+                <select name="[id_social_network][equal]" class="form-control">
+                  <option>Любая</option>
+                  <option value="1">Мой Мир</option>
+                  <option value="2">Одноклассники</option>
+                  <option value="3">Вконтакте</option>
+                </select>
+              </th>
+              <th><input name="q[user][equal]" type="text" class="form-control"></th>
+              <th><input name="name" type="text" class="form-control"></th>
+              <th><input name="pid" type="text" class="form-control"></th>
+              <th><select id="status" name="status" class="form-control"></select></th>
+              <th style="width: 200px;"><button id="filter-btn" type="button" class="btn btn-default btn-sm">Применить</button></th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <button id="add-new-group" type="button" style="float:right;" class="btn btn-default btn-sm">Добавить новую группу</button>
+      </div>
+      
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/global.js" ></script>
+    <script src="js/groups.js"></script>
+  </body>
+</html>

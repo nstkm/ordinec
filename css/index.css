@@ -1,0 +1,335 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	/*vertical-align: baseline;*/
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+@font-face {
+	font-family: 'Bemount';
+	src: url(../fonts/Bemount.otf);
+}
+
+@font-face {
+	font-family: 'Bemount-line';
+	src: url(../fonts/Bemount-line.otf);
+}
+
+@font-face {
+	font-family: 'OS-italic';
+	src: url(../fonts/OPENSANS-ITALIC.ttf);
+}
+
+@font-face {
+	font-family: 'OS-light';
+	src: url(../fonts/OPENSANS-LIGHT.ttf);
+}
+
+@font-face {
+	font-family: 'OS-semibold';
+	src: url(../fonts/OPENSANS-SEMIBOLD.ttf);
+}
+
+@font-face {
+	font-family: 'OS';
+	src: url(../fonts/OPENSANS-REGULAR.ttf);
+}
+
+@font-face {
+	font-family: 'OS-bold';
+	src: url(../fonts/OPENSANS-BOLD.ttf);
+}
+
+@font-face {
+	font-family: 'CORP';
+	src: url(../fonts/CO_HEADLINE_CORP.ttf);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'OS-light';
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.main-bg {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: #243a00;
+	min-width: 800px;
+}
+
+.main-bg>img {
+	width: 100%;
+}
+
+h1,h2,h3,a {
+	font-family: 'Bemount';
+	color: #fff;
+}
+
+.main-wrapper {
+	position: absolute;
+	top: 0;
+	width: 66%;
+	margin-left: 17%;
+	height: 100%;
+}
+
+/*start header*/
+
+.header {
+	width: 100%;
+    height: 15%;
+    overflow: hidden;
+}
+
+.header a {
+	font-size: 4.5vw;
+	display: block;
+    margin: 6.5% 0 1% 36.5%;
+    width: 32%;
+}
+
+.header h2 {
+	display: block;
+    font-size: 1.9vw;
+    width: 37%;
+    margin-left: 32%;
+    text-align: center;
+}
+
+/*end header*/
+
+/*start section flags*/
+
+.flags {
+	height: 21%;
+	position: relative;
+}
+
+.flags>a {
+	position: absolute;
+	display: block;
+}
+
+.flags .mm {
+	width: 11%;
+    height: 20%;
+    top: 26%;
+    left: 90%;
+}
+
+.flags .vk {
+	width: 11%;
+    height: 18%;
+    top: 15%;
+    right: 15%;
+}
+
+.flags .ok {
+	width: 11%;
+    height: 18%;
+    top: 41%;
+    right: 12%;
+}
+
+/*end section flags*/
+
+/*start section registration*/
+
+.registration {
+	height: 8%;
+}
+
+.action-choice {
+	color: #fff;
+    font-size: 1.46vw;
+    height: 18%;
+    width: 20%;
+    margin-left: 42.5%;
+}
+
+.input-wrap {
+	height: 15%;
+    width: 44%;
+    margin-left: 29%;
+    margin-top: 1%;
+}
+
+.input-wrap[data-id="1"] {
+	display: none;
+}
+
+.registration button[data-id="2"] {
+	margin: 2% 0 0 46.5%!important;
+}
+
+.registration button[data-id="1"] {
+	display: none;
+}
+
+.input-wrap input {
+	outline: none;
+	background: #d3d3d3;
+	border: none;
+	height: 100%;
+	width: 47%;
+	border-radius: 15px;
+	text-indent: 7%;
+	font-size: 0.86vw;
+}
+
+.registration button {
+	outline: none;
+	border: none;
+	background: #275a9b;
+	border-radius: 15px;
+	font-size: 1.42vw;
+	font-family: 'Bemount';
+	cursor: pointer;
+	color: #fff;
+	padding: 0.2% 1.5%;
+	margin: 2% 0 0 41.5%;
+}
+
+/*end section registration*/
+
+/*start section description*/
+
+.description {
+	height: 42.6%;
+	overflow: hidden;
+}
+
+.description>h1 {
+	font-size: 3.71vw;
+    text-align: center;
+    margin-top: 13%;
+}
+
+.article {
+	width: 24.4%;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+	height: 57%;
+	margin-top: 4%;
+}
+
+.article h2 {
+	font-size: 2.17vw;
+	text-align: center;
+	line-height: 2vw;
+	margin-bottom: 7%;
+}
+
+.article>img {
+	width: 43%;
+    display: block;
+    margin: 0 auto 7%;
+}
+
+.article>p {
+	color: #c8c7c7;
+    font-size: 0.84vw;
+    font-family: 'Arial';
+    text-align: center;
+    line-height: 1vw;
+    padding: 0 8%;
+}
+
+.description>h3 {
+	font-size: 2.17vw;
+	text-align: center;
+}
+
+.description .red {
+	color: #7f4300;
+}
+
+.description .green {
+	color: #009e00;
+}
+
+/*end section description*/
+
+/*start section question*/
+
+.question {
+	height: 8%;
+	position: relative;
+}
+
+.question h1 {
+	display: block;
+	font-size: 4.5vw;
+	height: 100%;
+	line-height: 9.5vw;
+	text-align: center;
+	width: 60%;
+}
+
+.question button {
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 2.57vw;
+	font-family: 'Bemount';
+	color: #fff;
+	cursor: pointer;
+    height: 48%;
+    width: 41%;
+    position: absolute;
+    top: 27%;
+    right: 0%;
+}
+
+/*end section question*/
+
+.footer h2 {
+	font-size: 1.2vw;
+	font-family: 'Arial';
+    color: #1d421a;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2.5%;
+}

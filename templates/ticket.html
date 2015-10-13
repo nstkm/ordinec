@@ -1,0 +1,81 @@
+<div class="page-title">
+	<h1>Личный кабинет</h1>
+</div>
+<div class="lk-window">
+	<div class="lk-window-header">
+		<span>Тикет в службу поддержки</span>
+	</div>
+	<div class="lk-window-body">
+		<section class="lk-window-section">
+			<h3>Сообщение</h3>
+			<hr />
+			<section class="success-block" data-id="3">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+  				<strong>Успешно!</strong> <span>Текет создан.</span>
+			</section>
+			<section class="error-block" data-id="3">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+  				<strong>Ошибка!</strong> <span>Ошибка!</span>
+			</section>
+			<div class="description">
+				<span>*Все поля обязательны для заполнения</span>
+				<i>Агент поддержки ответит вам<br /> в течении 24 часов с момента отправки<br /> вами сообщения!</i>
+			</div>
+			<table class="for-forms for-forms-tickets">
+				<tr>
+					<td>Раздел</td>
+					<td>Тема тикета</td>
+				</tr>
+				<tr>
+					<td style="padding-right:3%;">
+						<select name="" id="ticket-section"></select>
+					</td>
+					<td style="width:64%;"><input name="ticket-theme" style="" type="text"></td>
+				</tr>
+				<tr>
+					<td colspan="2">Текст сообщения</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="2"><textarea name="ticket-message" cols="30" rows="10"></textarea></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button id="make_ticket" class="btn" data-id="3">
+							<div class="btn-left">
+								<img class="btn-bg" src="../images/button-left.png" alt="">
+								<img src="../images/hammer.png" alt="" class="btn-icon">
+							</div>
+							<span>Отправить</span>
+							<img class="btn-preloader-img" src="../images/loader.gif" alt="">
+							<div class="btn-right">
+								<img class="btn-bg" src="../images/button-right.png" alt="">
+							</div>
+						</button>
+					</td>
+					<td></td>
+				</tr>
+			</table>
+			<h3>Ваши диалоги</h3>
+			<div class="description">
+				<p>В данной таблице вы можете посмотреть<br/>все ваши диалоги с администрацией<br />сайта</p>
+			</div>
+			<table class="data-table data-table-tickets">
+				<thead>
+					<tr>
+						<th>№</th>
+						<th>Дата</th>
+						<th>Тема</th>
+						<th>Сообщений</th>
+						<th>Статус</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</section>
+	</div>
+</div>
+<script src="../js/tickets.js"></script>
