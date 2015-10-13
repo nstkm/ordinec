@@ -14,6 +14,7 @@ $loader->useIncludePath(true);
 
 $loader->register();
 
+
 $method = isset($_GET['method'])?$_GET['method']:'';
 
 $responce = [
